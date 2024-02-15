@@ -1,0 +1,11 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñÿ”Å8‘ı„åÚ1
+L	java:S106"+Replace this use of System.out by a logger.(Şß¡ªúÿÿÿÿ8ı„åÚ1
+\
+java:S1161":Add the "@Override" annotation above this method signature(ÃÍªàşÿÿÿÿ8¡ı„åÚ1
+L	java:S106"+Replace this use of System.out by a logger.(‘ê÷ÿÿÿÿÿ8¢ı„åÚ1
+\
+java:S1161":Add the "@Override" annotation above this method signature(ÃÍªàşÿÿÿÿ8¤ı„åÚ1
+L	java:S106"+Replace this use of System.out by a logger.(“’ğüÿÿÿÿ8¥ı„åÚ1
+m
+java:S1128"KRemove this unused import 'javax.print.attribute.HashPrintJobAttributeSet'.(«Ã•şÿÿÿÿ8¨ı„åÚ1

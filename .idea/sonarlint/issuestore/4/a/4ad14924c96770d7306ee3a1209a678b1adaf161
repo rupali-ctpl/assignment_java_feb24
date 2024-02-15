@@ -1,0 +1,12 @@
+
+r
+java:S1104"PMake real a static final constant or non-public and provide accessors if needed.(ÉØàúÿÿÿÿ8Õ™ÕåÚ1
+q
+java:S1104"UMake imaginary a static final constant or non-public and provide accessors if needed.(¹ši8Ø™ÕåÚ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆ¥¿äüÿÿÿÿ8Ù™ÕåÚ1
+L	java:S106-"+Replace this use of System.out by a logger.(¼¥ğøÿÿÿÿ8í™ÕåÚ1
+G	java:S1065"+Replace this use of System.out by a logger.(ÔÖ8ñ™ÕåÚ1
+G	java:S1067"+Replace this use of System.out by a logger.(ñİø´8ò™ÕåÚ1
+G	java:S106="+Replace this use of System.out by a logger.(èì¦ë8ò™ÕåÚ1
+L	java:S106?"+Replace this use of System.out by a logger.(¡ï¤üÿÿÿÿ8ó™ÕåÚ1
+L	java:S106D"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÃŠØåÚ1
