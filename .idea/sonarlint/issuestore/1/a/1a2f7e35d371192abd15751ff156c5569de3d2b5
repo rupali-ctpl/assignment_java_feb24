@@ -1,0 +1,19 @@
+
+m
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8€©æäÚ1
+l
+java:S1104"OMake age a static final constant or non-public and provide accessors if needed.(×Áò¿8şçæäÚ1
+t
+java:S1104"WMake phoneNumber a static final constant or non-public and provide accessors if needed.(Ò€æ¨8şçæäÚ1
+u
+java:S1104"SMake address a static final constant or non-public and provide accessors if needed.(€ªµúÿÿÿÿÿ8şçæäÚ1
+t
+java:S1104"RMake salary a static final constant or non-public and provide accessors if needed.(×ııüÿÿÿÿ8şçæäÚ1
+|
+java:S1104"ZMake specialization a static final constant or non-public and provide accessors if needed.(ğœîÁÿÿÿÿÿ8è”ïäÚ1
+s
+java:S1104""VMake department a static final constant or non-public and provide accessors if needed.(ğÄç©8æûîäÚ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áúşÕÿÿÿÿÿ8ñÏâäÚ1
+L	java:S106"+Replace this use of System.out by a logger.(Ø´’èúÿÿÿÿ8€ĞâäÚ1
+L	java:S106-"+Replace this use of System.out by a logger.(—¼ÆÈûÿÿÿÿ8„ĞâäÚ1
+G	java:S1060"+Replace this use of System.out by a logger.(Ê¥õ‰8é¸ğäÚ1

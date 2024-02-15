@@ -1,9 +1,53 @@
 
-[
-+src/Shreyash_Hake/RightTrianglePattern.java,5\b\5b5b3281ad2566836aa50946a7b389e8ace3483c
-X
-(src/Shyam_More/RightTrianglePattern.java,a\6\a6ffe35ee9ac946329c557592b901c4a981c71da
 Z
 *src/shreyashHake/RightTrianglePattern.java,b\e\beea1408013b078e894e68a8a3bf8d9301b9fcfb
 W
 'src/shyamMore/RightTrianglePattern.java,5\3\5366cb653c0c83668567749657af8e8db2cf4ec9
+N
+src/shreyashHake/WhileTue.java,8\0\809e6998293b6219679722be3fd0a18a4b4e8344
+J
+src/shreyashHake/Area.java,b\5\b5bcc075e504bd24bd487030f7259c5e0e835be8
+M
+src/shreyashHake/Student.java,4\d\4d189b1866ceb746758952102dab307042dd6079
+N
+src/shreyashHake/Triangle.java,0\0\00b570e1593a76c82ceab0d66fb94b328779cd12
+`
+0src/shreyashHake/TriangleDefaultConstructor.java,0\c\0cb17c8f9a5fafa5784ae77daa6db14119c8af72
+P
+ src/shreyashHake/Triangle_1.java,e\3\e306a78e9dd752ba4f54cdd37fee24c7b078672d
+P
+ src/shreyashHake/Triangle_2.java,6\7\67215343fee7ec595c34dc9044aeb96d38922a2e
+U
+%src/shreyashHake/TriangleDefault.java,2\4\24caeb0b22510916938089e9d0603fc22ffeaa67
+[
++src/shreyashHake/TriangleParameterised.java,a\c\ac8cbbc72d9ef70428f1b5d95fe3971891faa679
+P
+ src/shreyashHake/Reactangle.java,3\5\353de74beda5206d5649f2cf1bf5be1c5066a9b2
+O
+src/shreyashHake/Rectangle.java,f\f\ffa7c9d2c5b4e6840f9fe09fc03d6808c2d9ae91
+T
+$src/shreyashHake/question1/Area.java,f\e\fe3f6ec3c249a73119141c901104468de047d4ad
+W
+'src/shreyashHake/question2/Student.java,0\c\0cb4d7957705d992b2791164098d43e190344431
+Z
+*src/shreyashHake/question3_4/Triangle.java,2\b\2bcef27d6b046bf64686a39005dad795f5b23359
+Y
+)src/shreyashHake/question5/Rectangle.java,c\5\c54baae0caa4b0d0df1a4831b82cc9f642b64305
+T
+$src/shreyashHake/question6/Area.java,d\3\d3be0b666c76435256475694f5190ee5127e1e0d
+W
+'src/shreyashHake/question8/Student.java,f\6\f6d6fc93865fbad08689d1b9d5c932761f03cfdf
+W
+'src/shreyashHake/question7/Complex.java,4\a\4ad14924c96770d7306ee3a1209a678b1adaf161
+X
+(src/shreyashHake/question4/Triangle.java,b\a\ba95fa07a5527d259a0bcff430695d093d9c7f3e
+X
+(src/shreyashHake/question3/Triangle.java,3\5\356f7cf69194b6c2ec4293ddf0089cf9aa2cfefc
+[
++src/shreyashHake/question9/Inheritacne.java,0\e\0eefd1dd25feb3f009731fe5ebe7cfd3edd90796
+[
++src/shreyashHake/question9/Inheritance.java,a\6\a6d5274127c9f419cfc2fcfba778e1280c37421f
+W
+'src/shreyashHake/question10/Member.java,1\a\1a2f7e35d371192abd15751ff156c5569de3d2b5
+V
+&src/shreyashHake/question11/Shape.java,d\6\d68ab37c01b1e7eb73ed017b7471d5d353abe34e

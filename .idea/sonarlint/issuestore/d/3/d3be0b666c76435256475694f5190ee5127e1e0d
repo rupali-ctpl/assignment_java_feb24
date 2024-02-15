@@ -1,0 +1,7 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óªß”
+G	java:S106"+Replace this use of System.out by a logger.(‡ûİŸ8ÅÄâãÚ1
+L	java:S106"+Replace this use of System.out by a logger.(¹ŸÛ­ÿÿÿÿÿ8äóâãÚ1
+L	java:S106"+Replace this use of System.out by a logger.(úŠÍ‚şÿÿÿÿ8à¥åãÚ1
+_
+java:S1128"=Remove this unused import 'shreyashHake.question5.Rectangle'.(îâ×Çıÿÿÿÿ8é®æãÚ1
