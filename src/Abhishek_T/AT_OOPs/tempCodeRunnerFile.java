@@ -1,0 +1,1 @@
+img2.charAt(y)<='9'
