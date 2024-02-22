@@ -1,4 +1,4 @@
-
+// to update the gitignore
 public class RightTrianglePattern {
     public static void main(String[] args) {
 //i for rows and j for columns      
