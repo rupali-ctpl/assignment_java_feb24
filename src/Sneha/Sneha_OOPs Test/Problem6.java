@@ -1,34 +1,28 @@
 import java.util.*;
-
-class Areaa{
-    
-    int l;
-    int b;
-   
-    
-
-    Areaa(int l,int b){
-        this.l =l;
-        this.b=b;
-
+//class for area of traingle
+class AreaOfTriangle{
+    int length;
+    int breadth;
+    //constructor of are of triangle
+    AreaOfTriangle(int l,int b){
+        length =l;
+        breadth=b;
     }
+    //function to return the area of triangle
      public int returnArea(){
-        return l*b;
+        return length*breadth;
      }
-
 }
 public class Problem6 {
     public static void main(String[] args) {
-       
         Scanner sc = new Scanner(System.in);
-        int l = sc.nextInt();
-        int b = sc.nextInt();
-    
-       Areaa a = new Areaa(l,b);
-       System.out.println(a.returnArea());
-       
-
-
+        // Ask user to input values
+        System.out.println("Enter the length: ");
+        int length = sc.nextInt();
+        System.out.println("Enter the breadth: ");
+        int breadth = sc.nextInt();
+        AreaOfTriangle area = new AreaOfTriangle(length,breadth);
+        System.out.println("Area of Rectangle is: "+area.returnArea());
         sc.close();
     }
 }

@@ -1,38 +1,28 @@
+// class shape
 class Shape{
-    Shape(){
-
-    }
-
-    public void m1(){
+    public void shapemethod(){
         System.out.println("This is shape");
     }
 }
-
-class Rectangle11 extends Shape{
-    Rectangle11(){
-
-    }
-    public void m1(){
+//class rectangle extends shape
+class Rectangle extends Shape{
+    public void reactngleMethod(){
         System.out.println("This is rectangle");
     }
 }
-
+//class circle extends shape
 class Circle extends Shape{
-    Circle(){
-
-    }
-
-    public void m1(){
+    public void circleMethod(){
         System.out.println("This is circle");
     }
 }
 public class Problem11 {
     public static void main(String[] args) {
         Shape s = new Shape();
-        s.m1();
-        Rectangle11 r = new Rectangle11();
-        r.m1();
+        s.shapemethod();
+        Rectangle r = new Rectangle();
+        r.reactngleMethod();
         Circle c = new Circle();
-        c.m1();
+        c.circleMethod();
     }
 }

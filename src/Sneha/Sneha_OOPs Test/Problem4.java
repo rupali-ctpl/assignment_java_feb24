@@ -1,31 +1,32 @@
+// class of triangle to get area and perimeter
 class Triangle2{
-    int s1,s2,s3;
+    public double length;
+    public double breadth;
+    public double height;
 
-    public Triangle2(int s1, int s2, int s3) {
-        //TODO Auto-generated constructor stub
-        this.s1=s1;
-        this.s2=s2;
-        this.s3=s3;
+    //constructor of triangle to sset values
+    Triangle2(double l, double b, double h)
+    {
+        length = l;
+        breadth = b;
+        height = h;
     }
-
-
-   
-   
-
-    public int getArea(){
-        return s1*s2*s3;
+    // function to get area
+    public void area(){
+        double s=(length+breadth+height)/2f;
+        double area=Math.sqrt(s*(s-length)*(s-breadth)*(s-height));
+        System.out.println("area is " + area);
     }
-
-    public int getPerimeter(){
-        return 2*(s1+s2+s3);
+    //function to get perimeter
+    public void perimeter(){
+        double perimeter = (length + breadth+ height);
+        System.out.println("perimeter is " +perimeter);
     }
 }
-
 public class Problem4 {
     public static void main(String[] args) {
         Triangle2 t2 = new Triangle2(3,4,5);
-        System.out.println(t2.getArea());
-        System.out.println(t2.getPerimeter());
-
+        t2.area();
+        t2.perimeter();
     }
 }
