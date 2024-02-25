@@ -1,21 +1,33 @@
 package Shrawani.OOP;
 
-class Student1{
+class Student1 {
     private String name;
-    Student1(){
-        this.name="Unknown";
+
+    //Default constructor
+    Student1() {
+        this.name = "Unknown";
     }
-    Student1(String name){
-        this.name=name;
+
+    // Parameterized constructor
+    Student1(String name) {
+        this.name = name;
     }
-    void display(){
+
+    // Method to display
+    void display() {
         System.out.println(name);
     }
 }
-public class Eight {
+
+public class
+Eight {
     public static void main(String[] args) {
-        Student1 s= new Student1();
-        Student1 s2= new Student1("Shravni");
+
+        //Instances
+        Student1 s = new Student1();
+        Student1 s2 = new Student1("Shravni");
+
+        //Display
         s.display();
         s2.display();
     }

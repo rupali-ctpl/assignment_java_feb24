@@ -1,55 +1,64 @@
 package Shrawani.OOP;
 
 
-//class Complex {
-//    private int real;
-//    private int img;
-//
-//    Complex(int real, int img) {
-//        this.real = real;
-//        this.img = img;
-//    }
-//
-//    void PrintSum(Complex a, Complex b) {
-//        int real_ans = a.real + b.real;
-//        int imaginary_ans = a.img + b.img;
-//        System.out.println("The sum is: " + real_ans + " + " + imaginary_ans + "i ");
-//    }
-//
-//}
 class Complex {
-    private int real1, real2;
-    private int img1, img2;
+    double real;
+    double imaginary;
 
-    Complex(int real1, int img1, int real2, int img2) {
-        this.real1 = real1;
-        this.real2 = real2;
-        this.img1 = img1;
-        this.img2 = img2;
+    // Constructor
+    public Complex(double real, double imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
     }
 
-    void addition() {
-        int res_i = img1 + img2;
-        int res_r = real1 + real2;
-        System.out.println("Addition is: " + res_r + (res_i > 0 ? "+" + res_i : res_i) + "i");
+    // Addition
+    public Complex add(Complex other) {
+        double realPart = this.real + other.real;
+        double imaginaryPart = this.imaginary + other.imaginary;
+        return new Complex(realPart, imaginaryPart);
     }
 
-    void difference() {
-        int res_i = img1 - img2;
-        int res_r = real1 - real2;
-        System.out.println("Addition is: " + res_r + (res_i > 0 ? "+" + res_i : res_i) + "i");
+    // Subtraction
+    public Complex subtract(Complex other) {
+        double realPart = this.real - other.real;
+        double imaginaryPart = this.imaginary - other.imaginary;
+        return new Complex(realPart, imaginaryPart);
     }
 
-    void multiplication() {
-        System.out.println("OOps! Unable to recall the formulae.");
+    // Multiplication
+    public Complex multiply(Complex other) {
+        double realPart = (this.real * other.real) - (this.imaginary * other.imaginary);
+        double imaginaryPart = (this.real * other.imaginary) + (this.imaginary * other.real);
+        return new Complex(realPart, imaginaryPart);
+    }
+
+    // print complex number
+    @Override
+    public String toString() {
+        if (imaginary >= 0) {
+            return real + " + " + imaginary + "i";
+        } else {
+            return real + " - " + Math.abs(imaginary) + "i";
+        }
     }
 }
 
 public class Seven {
     public static void main(String[] args) {
-        Complex c = new Complex(10, 5, -2, -6);
-        c.addition();
-        c.difference();
-        c.multiplication();
+        Complex num1 = new Complex(2, 3);
+        Complex num2 = new Complex(1, 4);
+
+        // Sum
+        Complex sum = num1.add(num2);
+        System.out.println("Sum: " + sum);
+
+        // Difference
+        Complex diff = num1.subtract(num2);
+        System.out.println("Difference: " + diff);
+
+        // Multiplication
+        Complex Multiplication = num1.multiply(num2);
+        System.out.println("Product: " + Multiplication);
     }
 }
+

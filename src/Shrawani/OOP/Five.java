@@ -3,32 +3,27 @@ package Shrawani.OOP;
 import java.util.Scanner;
 
 class Rectangle {
+    //Dimensions
     private double length;
     private double breadth;
 
+    // Constructor
     Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
 
-    public double getLength() {
-        return this.length;
-    }
-
-    public double getBreadth() {
-        return this.breadth;
-    }
-
+    // Calculate area
     public double Area() {
-        return (getLength() * getBreadth());
+        return (length * breadth);
     }
 
 }
 
 public class Five {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
+        // Instances
         Rectangle a = new Rectangle(4, 5);
         Rectangle b = new Rectangle(5, 8);
 
