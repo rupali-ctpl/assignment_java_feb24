@@ -1,30 +1,28 @@
 class Triangle{
-    int s1,s2,s3;
-
-    void triangle(){
-        
+    public double length;
+    public double breadth;
+    public double height;
+    
+    // function to get the area
+    public void area(){
+        double s=(length+breadth+height)/2f;
+        double area=Math.sqrt(s*(s-length)*(s-breadth)*(s-height));
+        System.out.println("Area of traingle is: " + area);
     }
-    public void setSide(int s1,int s2,int s3){
-     this.s1=s1;
-     this.s2=s2;
-     this.s3=s3;
- 
-    }
-
-    public int getArea(){
-        return s1*s2*s3;
-    }
-
-    public int getPerimeter(){
-        return 2*(s1+s2+s3);
+    // function to get perimeter of triangle
+    public void perimeter(){
+        double perimeter = (length + breadth+ height);
+        System.out.println("Perimeter of triangle is: " +perimeter);
     }
 }
 public class Problem3 {
     public static void main(String[] args) {
-        Triangle t = new Triangle();
-        t.setSide(3, 4, 5);
-        System.out.println(t.getArea());
-        System.out.println(t.getPerimeter());
-        
+        Triangle triangle  = new Triangle();
+        // set the values;
+        triangle.length = 3;
+        triangle.breadth = 4;
+        triangle.height = 5;
+        triangle.area();
+        triangle.perimeter();
     }
 }

@@ -1,74 +1,45 @@
 class Member{
-    String name;
-    int age;
-    double phn;
-    String address;
-    double salary;
-
-    Member(String name,int age, double phn,String address, double salary){
-      
-
-        this.name=name;
-        this.age=age;
-        this.phn=phn;
-        this.address=address;
-      this.salary=salary;
+    public String name;
+    public int Age;
+    public String phn_no;
+    public String address;
+    public int salary;
+    // function to print salary
+    public void printSalary()
+    {
+        System.out.println("Salary of the member "+ name +" is "+ salary);
     }
-    public void printSalary(){
-        System.out.println("Printing salary: "+salary);
-    }
-
 }
-
+// Employee class extends class member 
 class Employee extends Member{
-    Employee(String name,int age, double phn,String address,double salary) {
-        super(name, age,phn,address,salary);
-        
-        
-    }
-
-    String special="Java";
-
-  
-    public String  toString(){
-        return "name: "+name+" age: "+age+" phone number: "+phn+" Address: "+address+" salary: "+salary+" specialization: "+special;
-
-    }
-
+    public String specialization1;
+    public String department1;
 }
-
+// Manager class extends class member
 class Manager extends Member{
-    Manager(String name,int age, double phn,String address,double salary) {
-        super(name, age,phn,address,salary);
-        
-        
-    }
-
-    String dept="HR";
-
-    
-    public String  toString(){
-        return "name: "+name+" age: "+age+" phone number: "+phn+" Address: "+address+" salary: "+salary+"department: "+dept;
-        
-    }
-
+    public String specialization2;
+    public String department2;
 }
-
 
 public class Problem10 {
     public static void main(String[] args) {
-   
+        Employee employee = new Employee();
+        employee.name = "Sneha";
+        employee.Age = 21;
+        employee.phn_no = "1234567895";
+        employee.salary = 1000000;
+        employee.specialization1 = "JAVA";
+        employee.department1 = "CSE";
 
+        Manager manager = new Manager();
+        manager.name = "Nikita";
+        manager.Age = 24;
+        manager.phn_no = "8974563214";
+        manager.salary = 5000000;
+        manager.specialization2 = "C++ ";
+        manager.department2 = "IT";
 
-       Employee e1 = new Employee("sneha",12,123456,"latur",12345);
-       e1.printSalary();
-       System.out.println(e1.toString());
-      
-
-       Manager m1 = new Manager("Nikita", 25, 12365498, "pune", 52112);
-       System.out.println(m1.toString());
-
-
-        
+        employee.printSalary();
+        manager.printSalary();
     }
 }

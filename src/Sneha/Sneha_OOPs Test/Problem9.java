@@ -1,29 +1,25 @@
-class Parenting{
-    public Parenting(){
-
-    }
-    public void m1(){
+//parent class
+class Parent{
+    // parent method
+    public void parentmethod(){
         System.out.println("This is parent class");
     }
-   
 }
-
-class Childish extends Parenting{
-    public Childish(){
-
-    }
-    public void m2(){
+// child class extending from parent
+class Child extends Parent{
+    //child method
+    public void childmethod(){
         System.out.println("This is child class");
     }
 }
-
 public class Problem9 {
     public static void main(String[] args) {
-        Parenting p1 = new Parenting();
-        p1.m1();
-        Childish c1 = new Childish();
-        c1.m2();
-        c1.m1();
-        
+        Parent parent1 = new Parent();
+        //calling parent method
+        parent1.parentmethod();
+        Child child1 = new Child();
+        //calling child method
+        child1.childmethod();
+        child1.parentmethod();   
     }
 }
