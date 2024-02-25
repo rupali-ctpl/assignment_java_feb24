@@ -1,60 +1,48 @@
 package Shrawani.OOP;
 
-import javax.sound.midi.Soundbank;
-import java.util.Scanner;
-
 class Triangle {
+    // Lengths of triangle
     private double l1, l2, l3;
 
-    public double getL1() {
-        return l1;
-    }
-
+    // Set lengths
     public void setL1(double l1) {
         this.l1 = l1;
-    }
-
-    public double getL2() {
-        return l2;
     }
 
     public void setL2(double l2) {
         this.l2 = l2;
     }
 
-    public double getL3() {
-        return l3;
-    }
-
     public void setL3(double l3) {
         this.l3 = l3;
     }
 
+    // Method to calculate area
     void Area() {
-        double s = getL1() + getL2() + getL3();
-        System.out.println("Area of the triangle is: " + (s * (s - l1) * (s - l2) * (s - l3)));
+        double s = (l1 + l2 + l3) / 2;
+        double area = Math.sqrt(s * (s - l1) * (s - l2) * (s - l3)); // Heron's formula
+        System.out.println("Area of the triangle is: " + area);
     }
 
+    // Method to calculate perimeter
     void perimeter() {
-        System.out.println("Perimeter of triangle is: " + (getL1() + getL2() + getL3()));
+        System.out.println("Perimeter of triangle is: " + (l1 + l2 + l3));
     }
-//    Triangle(int l1, int l2, int l3) {
-//        this.l1=l1;
-//        this.l2= l2;
-//        this.l3=l3;
-//    }
-
 
 }
 
+// No user input
 public class Three {
     public static void main(String[] args) {
+
         Triangle t = new Triangle();
-        Scanner sc= new Scanner(System.in);
-        System.out.println("Enter the sides of the triangle: ");
-        t.setL1(sc.nextDouble());
-        t.setL2(sc.nextDouble());
-        t.setL3(sc.nextDouble());
+
+        // Setting lengths
+        t.setL1(3);
+        t.setL2(4);
+        t.setL3(5);
+
+        // Calculating area and perimeter
         t.Area();
         t.perimeter();
     }
