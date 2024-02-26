@@ -1,69 +1,64 @@
-
-class Member{
-    String Name;
-    int Age;
-    String PhoneNo;
-    String Address;
+// Class representing a member with common attributes
+class Member {
+    String name;
+    int age;
+    String phoneNo;
+    String address;
     long salary;
-
-    Member(String Name, int age, String PhoneNo, String Address,long salary){
-         this.Name = Name;
-         this.Age = age;
-         this.PhoneNo = PhoneNo;
-         this.Address = Address;
-         this.salary=salary;
+    // Constructor to initialize member attributes
+    Member(String name, int age, String phoneNo, String address, long salary) {
+        this.name = name;
+        this.age = age;
+        this.phoneNo = phoneNo;
+        this.address = address;
+        this.salary = salary;
     }
-    public void printSalary(){
-        System.out.println("Salary :  "+salary);
+    // Method to print salary
+    public void printSalary() {
+        System.out.println("Salary: " + salary);
     }
 }
-
-class Employee extends Member{
+// Employee class extending Member with additional specialization attribute
+class Employee extends Member {
     String specialization;
-    String department;
-
-    Employee(String name, int age, String phone,String Address,String spec,String dept,long salary){
-        super(name, age, phone, Address,salary);
-        this.specialization =spec;
-        this.department = dept;
+    // Constructor to initialize employee attributes
+    Employee(String name, int age, String phoneNo, String address, String specialization, long salary) {
+        super(name, age, phoneNo, address, salary);
+        this.specialization = specialization;
     }
-    public void display(){
-        System.out.println("Employee Details : ");
-        System.out.println("Name : "+Name);
-        System.out.println("Address : "+Address);
-        System.out.println("Specialization : "+specialization);
-        System.out.println("Department : "+department);
+    // Method to display employee details
+    public void display() {
+        System.out.println("Employee Details: ");
+        System.out.println("Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("Specialization: " + specialization);
     }
 }
-
-class Manager extends Member{
-    String specialization;
+// Manager class extending Member with additional department attribute
+class Manager extends Member {
     String department;
-
-    Manager(String name, int age, String phone,String Address,String spec,String dept,long salary){
-        super(name, age, phone, Address,salary);
-        this.specialization =spec;
-        this.department = dept;
+    // Constructor to initialize manager attributes
+    Manager(String name, int age, String phoneNo, String address, String department, long salary) {
+        super(name, age, phoneNo, address, salary);
+        this.department = department;
     }
-    public void display(){
-        System.out.println("Manager Details : ");
-        System.out.println("Name : "+Name);
-        System.out.println("Address : "+Address);
-        System.out.println("Specialization : "+specialization);
-        System.out.println("Department : "+department);
+    // Method to display manager details
+    public void display() {
+        System.out.println("Manager Details: ");
+        System.out.println("Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("Department: " + department);
     }
 }
-
+// Main class for solving Problem 10.
 public class Problem10 {
     public static void main(String[] args) {
-        Manager m=new Manager("Abhishek", 22, "9146910339", "Baner", "Recruiting", "HR",50000);
-        Employee e=new Employee("xyz", 23, "000000000", "Baner", "Software developer", "CSE",10000);
+        Manager manager = new Manager("Abhishek", 22, "9146910339", "Baner", "HR", 50000);
+        Employee employee = new Employee("xyz", 23, "000000000", "Baner", "Software developer", 10000);
 
-        m.display();
-        m.printSalary();
-
-        System.out.println();
-        e.display();
-        e.printSalary();
+        manager.display();
+        manager.printSalary();
+        employee.display();
+        employee.printSalary();
     }
 }

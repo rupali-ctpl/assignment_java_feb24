@@ -1,23 +1,25 @@
-
-class Rectangle{
-      int length=0,breadth=0;
-      Rectangle(int length,int breadth){
-          this.length=length;
-          this.breadth=breadth;
-      }
-
-      public int area(){
-        return (length*breadth);
-      }
+// Class to represent a rectangle.
+class Rectangle {
+    int length, breadth;  
+    // Constructor to initialize the dimensions of the rectangle.
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+    // Calculate and return the area of the rectangle.
+    public int Area() {
+        return length * breadth;
+    }
 }
-
+// Main class 
 public class Problem5 {
     public static void main(String[] args) {
-        Rectangle obj1=new Rectangle(4, 5);
-        Rectangle obj2=new Rectangle(5, 8);
+        Rectangle rectangle1 = new Rectangle(4, 5);
+        Rectangle rectangle2 = new Rectangle(5, 8);
 
-        System.out.println("Area of first rectangle is : "+obj1.area());
-        System.out.println("Area of second rectangle is : "+obj2.area());
-
+        // Area of the first rectangle
+        System.out.println("Area of the first rectangle is: " + rectangle1.Area());
+        // Area of the second rectangle
+        System.out.println("Area of the second rectangle is: " + rectangle2.Area());
     }
 }

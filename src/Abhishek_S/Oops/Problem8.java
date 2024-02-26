@@ -1,21 +1,21 @@
-
-class Student{
-    String name="Unknown";
-
-    Student(){
-
+// Class to represent a student.
+class Student {
+    String name = "Unknown";  // Default name is set to "Unknown"
+    // Default constructor
+    Student() {
     }
-    Student(String name){
-       this.name=name;
+    // Parameterized constructor to set the name
+    Student(String name) {
+        this.name = name;
     }
 }
-
+// Main class 
 public class Problem8 {
     public static void main(String[] args) {
-        Student s1=new Student();
-        Student s2=new Student("Abhishek");
-
-        System.out.println(s1.name);
-        System.out.println(s2.name);
+        Student student1 = new Student();
+        Student student2 = new Student("Abhishek");
+        // Displaying the names
+        System.out.println("Student 1 Name: " + student1.name);
+        System.out.println("Student 2 Name: " + student2.name);
     }
 }

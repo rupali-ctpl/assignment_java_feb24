@@ -1,53 +1,57 @@
 import java.util.Scanner;
-
-class Complex{
-    public void calculateSum(int r1,int i1,int r2,int i2){
-         int r=r1+r2;
-         int i=i1+i2;
-
-         System.out.println("Sum is : ");
-         System.out.println("Real : "+r);
-         System.out.println("Imaginary : "+i);
+// Class to represent complex numbers and perform operations.
+class Complex {
+    public int real;
+    public int imaginary;
+    // Constructor to initialize complex numbers.
+    Complex(int real, int imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
     }
-
-    public void calculateDiff(int r1,int i1,int r2,int i2){
-        int r=r1-r2;
-        int i=i1-i2;
-
-        System.out.println("Difference is : ");
-        System.out.println("Real : "+r);
-        System.out.println("Imaginary : "+i);
+    // method to calculate sum of two complex numbers.
+    public void sum(Complex c2) {
+        int sumReal = this.real + c2.real;
+        int sumImaginary = this.imaginary + c2.imaginary;
+        System.out.println("Sum is "+sumReal + " + " + sumImaginary + "i");
     }
-
-    public void calculateProduct(int r1,int i1,int r2,int i2 ){
-        int r=r1*r2-(i1*i2);
-        int i=(r1*i2)+(r2*i1);
-
-        System.out.println("Product is : ");
-        System.out.println("Real : "+r);
-        System.out.println("Imaginary : "+i);
+    // method to calculate difference of two complex numbers.
+    public void difference(Complex c2) {
+        int diffReal = this.real - c2.real;
+        int diffImaginary = this.imaginary - c2.imaginary;
+        System.out.println("difference is "+diffReal + " + " + diffImaginary + "i");
     }
+    // method to calculate product of two complex numbers.
+    public void product(Complex c2) {
+        int realPart = this.real * c2.real-this.imaginary * c2.imaginary;;
+        int imaginaryPart = this.real * c2.imaginary + this.imaginary * c2.real;   
 
+        System.out.println("Product is "+realPart + " + " + imaginaryPart + "i");
+    }
 }
-
+// Main class 
 public class Problem7 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter real part and imaginary part : ");
-        int real1=sc.nextInt();
-        int imag1=sc.nextInt();
-        System.out.println();
+        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter real part and imaginary part : ");
-        int real2=sc.nextInt();
-        int imag2=sc.nextInt();
-        System.out.println();
+        // Input for the first complex number
+        System.out.print("Enter real value of the 1st complex number: ");
+        int real1 = sc.nextInt();
+        System.out.print("Enter imaginary value of the 1st complex number: ");
+        int imaginary1 = sc.nextInt();
+        Complex complex1 = new Complex(real1, imaginary1);
 
-        Complex c=new Complex();
-        c.calculateSum(real1,imag1,real2,imag2);
-        System.out.println();
-        c.calculateDiff(real1,imag1,real2,imag2);
-        System.out.println();
-        c.calculateProduct(real1,imag1,real2,imag2);
+        // Input for the second complex number
+        System.out.print("Enter real value of the 2nd complex number: ");
+        int real2 = sc.nextInt();
+        System.out.print("Enter imaginary value of the 2nd complex number: ");
+        int imaginary2 = sc.nextInt();
+        Complex complex2 = new Complex(real2, imaginary2);
+
+        // Display results
+        complex1.sum(complex2);
+        complex1.difference(complex2);
+        complex1.product(complex2);
+
+        sc.close();
     }
 }

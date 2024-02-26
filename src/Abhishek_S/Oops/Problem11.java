@@ -1,30 +1,33 @@
-
-class Shape{
-    public void display(){
+// Shape class with a display method
+class Shape {
+    public void display() {
         System.out.println("This is shape class");
     }
 }
-
-class Rectangle extends Shape{
-    public void display(){
-        System.out.println("This is Rectangular class");
+// Rectangle class extending Shape and overriding the display method
+class Rectangle extends Shape {
+    @Override
+    public void display() {
+        System.out.println("This is rectangular class");
     }
 }
-
-class Circle extends Shape{
-    public void display(){
+// Circle class extending Shape and overriding the display method
+class Circle extends Shape {
+    @Override
+    public void display() {
         System.out.println("This is circular class");
     }
 }
-
+// Main class 
 public class Problem11 {
     public static void main(String[] args) {
-        Shape s1=new Shape();
-        Shape s2=new Rectangle();
-        Shape s3=new Circle();
-
-        s1.display();
-        s2.display();
-        s3.display();
+        // Creating instances of Shape, Rectangle, and Circle
+        Shape shape = new Shape();
+        Shape rectangle = new Rectangle();
+        Shape circle = new Circle();
+        // Displaying the messages using polymorphism
+        shape.display();
+        rectangle.display();
+        circle.display();
     }
 }
