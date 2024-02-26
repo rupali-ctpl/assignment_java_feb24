@@ -15,12 +15,14 @@ public class problem9 {
     }
 }
 
+// parent class with its method
 class parent{
     void meth1(){
         System.out.println("This is parent class");
     }
 }
 
+// child class extending the parent class 
 class child extends parent{
     void meth2(){
         System.out.println("this is child class");
