@@ -1,22 +1,28 @@
-
-class  Triangle{
-     public void area(int a,int b,int c){
-         int tmp=(a+b+c)/2;
-         int t2=tmp*(tmp-a)*(tmp-b)*(tmp-c);
-         double area=Math.sqrt(t2);
-         System.out.println("Area is : "+area );
-     }
-     public void perimeter(int a,int b,int c){
-        int sum=a+b+c;
-        System.out.println("Perimeter : "+sum);
-     }
-
+// Class to represent a triangle.
+class Triangle {
+    int side1, side2, side3;  
+    // Set the sides of the triangle.
+    public void setSides(int a, int b, int c) {
+        side1 = a;
+        side2 = b;
+        side3 = c;
+    }
+    // Calculate and display the area of the triangle.
+    public void area() {
+        System.out.println("Area is: " + (float) (side1 * side2) / 2);
+    }
+    // Calculate and display the perimeter of the triangle.
+    public void perimeter() {
+        System.out.println("Perimeter: " + (side1 + side2 + side3));
+    }
 }
+
+// Main class
 public class Problem3 {
     public static void main(String[] args) {
-        int a=3,b=4,c=5;
-        Triangle t=new Triangle();
-        t.area(a, b, c);
-        t.perimeter(a, b, c);
+        Triangle triangle = new Triangle();
+        triangle.setSides(3, 4, 5);
+        triangle.area();
+        triangle.perimeter();
     }
 }

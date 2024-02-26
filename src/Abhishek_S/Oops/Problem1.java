@@ -1,28 +1,30 @@
 import java.util.Scanner;
 
-class Area{
-    private int length=0;
-    private int breadth=0;
-
-    public void setDim(int length,int breadth){
-          this.length=length;
-          this.breadth=breadth;
+// Class to represent the area of a rectangle.
+class Area {
+    private int length;
+    private int breadth;
+    // Set the dimensions of the rectangle.
+    public void setDim(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
     }
-    public int getArea(){
-        int area=length*breadth;
-        return area;
+    // Calculate and return the area of the rectangle.
+    public int getArea() {
+        return length * breadth;
     }
 }
-
-public class Problem1{
+// Main class
+public class Problem1 {
     public static void main(String[] args) {
-        System.out.println("Enter lenght and breadth : ");
-        Scanner sc=new Scanner(System.in);
-        int len=sc.nextInt();
-        int bread=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter length: ");
+        int length = sc.nextInt();
+        System.out.println("Enter breadth: ");
+        int breadth = sc.nextInt();
 
-        Area obj=new Area();
-        obj.setDim(len, bread);
-        System.out.println("Area of reactangle is "+obj.getArea());
+        Area area = new Area();
+        area.setDim(length, breadth);
+        System.out.println("Area of rectangle is " + area.getArea());
     }
 }
