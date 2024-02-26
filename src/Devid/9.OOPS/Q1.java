@@ -1,29 +1,30 @@
 import java.util.Scanner;
-
-import javax.sound.midi.Soundbank;
-
+    // Class to calculate the area of a rectangle
 class Area {
-     public int length;
-     public int breadth;
-
+    public int length;
+    public int breadth;
+    // Method to set length and breadth
     public void setDim(int length, int breadth) {
         this.length = length;
         this.breadth = breadth;
     }
-    public int getArea(){
-        return length*breadth;
+    // Method to calculate area
+    public int getArea() {
+        return length * breadth;
     }
-
 }
 
 class Q1 {
     public static void main(String arg[]) {
         Area obj = new Area();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the value of length and breadth");
+        // Taking input from user
+        System.out.println("Enter the value of length: ");
         obj.length = sc.nextInt();
+        System.out.println("Enter the value of breadth: ");
         obj.breadth = sc.nextInt();
         obj.setDim(obj.length, obj.breadth);
-        System.out.println("Area of Rectangle is : "+obj.getArea());
+        // Printing the area
+        System.out.println("Area of Rectangle is " + obj.getArea() + " units");
     }
 }

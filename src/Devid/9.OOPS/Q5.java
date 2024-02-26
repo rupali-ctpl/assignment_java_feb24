@@ -1,25 +1,13 @@
 class Rectangle {
+    // Variables to store the length and breadth
     public int length;
     public int breadth;
-
+    // Constructor with parameters
     public Rectangle(int length, int breadth) {
         this.length = length;
         this.breadth = breadth;
     }
-
-    public int CalculateArea() {
-        return length * breadth;
-    }
-}
-
-class Rectangle1 extends Rectangle {
-
-    public Rectangle1(int length, int breadth){
-    super.length;
-    super.breadth;
-    }
-
-    @Override
+    // Method to calculate the area
     public int CalculateArea() {
         return length * breadth;
     }
@@ -27,6 +15,11 @@ class Rectangle1 extends Rectangle {
 
 public class Q5 {
     public static void main(String[] args) {
-
+        // Creating the two object of Rectangle class
+        Rectangle rectangle1 = new Rectangle(4, 5);
+        Rectangle rectangle2 = new Rectangle(5, 8);
+        // Printing the result
+        System.out.println("Area of rectangle1 ==> " + rectangle1.CalculateArea() + " units");
+        System.out.println("Area of rectangle2 ==> " + rectangle2.CalculateArea() + " units");
     }
 }
