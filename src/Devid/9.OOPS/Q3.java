@@ -1,30 +1,30 @@
-class Triangle{
+class Triangle {
+    // Variables to store the sides of triangle
     public int side1;
     public int side2;
     public int side3;
-
-    public  Triangle(){
-        this.side1 = 3;
-        this.side2 = 4;
-        this.side1 = 5;
+    // Constructor without parameters
+    public Triangle() {
+        side1 = 3;
+        side2 = 4;
+        side3 = 5;
     }
-
-    public double CalculateArea(){
-        double s = (side1 + side2 + side3)/3;
-        double area = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
-        return area;
-        
+    // Method to calculate perimeter
+    public double CalculatePerimeter() {
+        return (side1 + side2 + side3);
     }
-    public double CalculatePerimeter(){
-        double perimeter = (side1 + side2 + side3);
-        return perimeter;
-        
+    // Method to calculate area
+    public double CalculateArea() {
+        double s = CalculatePerimeter() / 2;
+        return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
     }
 }
+
 public class Q3 {
     public static void main(String[] args) {
         Triangle obj = new Triangle();
-        System.out.println("Area is : "+ obj.CalculateArea());
-        System.out.println("Perimeter is : "+ obj.CalculatePerimeter());
+        // Printing the result
+        System.out.println("Area is " + obj.CalculateArea() + " units");
+        System.out.println("Perimeter is " + obj.CalculatePerimeter() + " units");
     }
 }

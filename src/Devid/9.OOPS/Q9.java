@@ -1,25 +1,26 @@
-// import Parent.child;
-
-class Parent{
-    public String print(){
+class Parent {
+    // Method to print parent value
+    public String print() {
         return "This is parent class";
     }
 }
-
-class child extends Parent{
-    public String print1(){
+    // child class inherits the properties from parent class
+class child extends Parent {
+    // Method to print cbhild value
+    public String print1() {
         return "This is child class";
     }
 }
 
 public class Q9 {
     public static void main(String[] args) {
-        Parent obj = new Parent();
-        child obj1 = new child();
-
-        System.out.println(obj.print());
-        System.out.println(obj1.print1());
-        System.out.println(obj1.print());
+        // Creating object for parent class and child class
+        Parent parentObj = new Parent();
+        child childObj = new child();
+        // Printing the result 
+        System.out.println(parentObj.print());
+        System.out.println(childObj.print1());
+        System.out.println(childObj.print());
 
     }
 }
