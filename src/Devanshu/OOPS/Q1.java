@@ -1,31 +1,29 @@
-
-
 import java.util.Scanner;
-
-class Area{
-    int length;
-    int breadth;
-
-    public void setDim(int l,int b){
-        length = l;
-        breadth = b;
+// Class to represent the area of a rectangle.
+class Area {
+    private int length;
+    private int breadth;
+    // Set the dimensions of the rectangle.
+    public void setDim(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
     }
-
-    public int getArea(){
-        return length*breadth;
+    // Calculate and return the area of the rectangle.
+    public int getArea() {
+        return length * breadth;
     }
 }
-
+// Main class
 public class Q1 {
     public static void main(String[] args) {
-        System.out.println("Enter length and breadth of rectangle");
-        Scanner sc=new Scanner(System.in);
-        int length=sc.nextInt();
-        int breadth=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter length: ");
+        int length = sc.nextInt();
+        System.out.println("Enter breadth: ");
+        int breadth = sc.nextInt();
 
-        Area a=new Area();
-        a.setDim(length, breadth);
-
-        System.out.println(a.getArea());
+        Area area = new Area();
+        area.setDim(length, breadth);
+        System.out.println("Area of rectangle is " + area.getArea());
     }
 }
