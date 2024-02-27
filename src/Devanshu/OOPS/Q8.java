@@ -1,21 +1,22 @@
-class Student{
-    public Student(){
-        System.out.println("Unknow");
+// Class to represent a student.
+class Student {
+    String name;  
+    // Default constructor
+    Student() {
+        name="Unknown";
     }
-
-    public Student(String ...str) {
-        
-        for(var i:str){
-            System.out.print(i+" ");
-        }
+    // Parameterized constructor to set the name
+    Student(String name) {
+        this.name = name;
     }
-
-    
 }
-
+// Main class 
 public class Q8 {
     public static void main(String[] args) {
-        Student s=new Student("Devanshu","Devid","Abhi");
-
+        Student student1 = new Student();
+        Student student2 = new Student("Devanshu");
+        // Displaying the names
+        System.out.println("Student 1 Name: " + student1.name);
+        System.out.println("Student 2 Name: " + student2.name);
     }
 }

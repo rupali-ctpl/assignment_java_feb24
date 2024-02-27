@@ -1,23 +1,27 @@
-class Parent{
-    public void meth1(){
-        System.out.println("This is Parent class");
+// Parent class with a display method
+class Parent {
+    public void display() {
+        System.out.println("This is parent class");
     }
 }
-
-class Child extends Parent{
-    public void meth2(){
-        System.out.println("This is Child class");
+// Child class extending Parent and overriding the display method
+class Child extends Parent {
+    @Override
+    public void display() {
+        System.out.println("This is child class");
     }
 }
-
+// Main class 
 public class Q9 {
     public static void main(String[] args) {
-        Parent p=new Parent();
-        p.meth1();
-
-        Child c=new Child();
-        c.meth2();
-
-        c.meth1();
+        // Method of the parent class and object of the parent class
+        Parent parent1 = new Parent();
+        parent1.display();
+        // Method of the child class and object of the child class
+        Child child = new Child();
+        child.display();
+        // Method of the parent class and object of the child class
+        Parent parent2 = new Child();
+        parent2.display();
     }
 }
